@@ -1,4 +1,4 @@
-# Postman Onboarding: Azure Spec Discovery
+# Postman Enterprise Automation: Azure Spec Discovery
 
 [![CI](https://github.com/postman-cs/postman-azure-spec-discovery-action/actions/workflows/ci.yml/badge.svg)](https://github.com/postman-cs/postman-azure-spec-discovery-action/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/postman-cs/postman-azure-spec-discovery-action?sort=semver)](https://github.com/postman-cs/postman-azure-spec-discovery-action/releases) [![npm](https://img.shields.io/npm/v/%40postman-cs%2Fonboarding-azure-spec-discovery)](https://www.npmjs.com/package/@postman-cs/onboarding-azure-spec-discovery) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 

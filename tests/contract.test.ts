@@ -68,7 +68,7 @@ describe('action contract', () => {
     expect(contractInputNames).toEqual(LOCKED_INPUT_ORDER);
     expect(Object.keys(actionManifest.outputs)).toEqual(LOCKED_OUTPUT_ORDER);
     expect(contractOutputNames).toEqual(LOCKED_OUTPUT_ORDER);
-    expect(actionContract.name).toBe('Postman Onboarding: Azure Spec Discovery');
+    expect(actionContract.name).toBe('Postman Enterprise Automation: Azure Spec Discovery');
   });
 
   it('AZ-CONTRACT-002: mode defaults to resolve-one, accepts discover-many, rejects anything else', () => {
