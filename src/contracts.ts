@@ -161,9 +161,9 @@ export interface ExportSummary {
 }
 
 export const actionContract: AzureSpecDiscoveryActionContract = {
-  name: 'Postman Onboarding: Azure Spec Discovery',
+  name: 'Postman Enterprise Automation: Azure Spec Discovery',
   description:
-    'Discover Azure-hosted API specs and expose a spec path for Postman onboarding. Part of the Postman API Onboarding suite.',
+    'Discover Azure API specs and expose a spec path for Postman onboarding. Part of the Postman Enterprise Automation Suite.',
   inputs: {
     mode: {
       description:

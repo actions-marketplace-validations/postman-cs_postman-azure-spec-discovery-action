@@ -199167,8 +199167,8 @@ var import_promises13 = require("node:fs/promises");
 
 // src/contracts.ts
 var actionContract = {
-  name: "Postman Onboarding: Azure Spec Discovery",
-  description: "Discover Azure-hosted API specs and expose a spec path for Postman onboarding. Part of the Postman API Onboarding suite.",
+  name: "Postman Enterprise Automation: Azure Spec Discovery",
+  description: "Discover Azure API specs and expose a spec path for Postman onboarding. Part of the Postman Enterprise Automation Suite.",
   inputs: {
     mode: {
       description: "Discovery mode: resolve-one selects the single best service for this repository; discover-many exports every exportable candidate; discover-estate enumerates repo-associated Azure resources across the selected subscription scope(s) without exporting specs.",
