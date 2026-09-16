@@ -8,6 +8,7 @@ import { buildExecutionOutputs, resolveInputs } from '../src/runtime.js';
 
 const repoRoot = resolve(import.meta.dirname, '..');
 const actionManifest = parse(readFileSync(resolve(repoRoot, 'action.yml'), 'utf8')) as {
+  description: string;
   inputs: Record<string, { required?: boolean; default?: string }>;
   outputs: Record<string, { description?: string }>;
 };
@@ -69,6 +70,12 @@ describe('action contract', () => {
     expect(Object.keys(actionManifest.outputs)).toEqual(LOCKED_OUTPUT_ORDER);
     expect(contractOutputNames).toEqual(LOCKED_OUTPUT_ORDER);
     expect(actionContract.name).toBe('Postman Enterprise Automation: Azure Spec Discovery');
+  });
+
+  it('keeps the parsed action manifest description nonempty and within 125 characters', () => {
+    expect(actionManifest.description.length).toBeGreaterThan(0);
+    expect(actionManifest.description.length).toBeLessThanOrEqual(125);
+    expect(actionManifest.description).toBe(actionContract.description);
   });
 
   it('AZ-CONTRACT-002: mode defaults to resolve-one, accepts discover-many, rejects anything else', () => {
